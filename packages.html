@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jizana | Package Listing</title>
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  darkMode: 'class'
+};
+</script>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+<script src="https://kit.fontawesome.com/4ad0b5c63b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="smooth transition-colors duration-300 packages-page">
+<header id="siteHeader" class="site-header is-scrolled z-50 shadow-sm">
+  <div class="layout-shell flex items-center justify-between py-3">
+    <a href="index.html" class="flex items-center gap-3">
+      <span class="site-brand-badge w-10 h-10 rounded-full flex items-center justify-center text-white text-lg"><i class="bi bi-airplane-engines-fill"></i></span>
+      <h1 class="site-brand text-lg font-black">Jizana</h1>
+    </a>
+    <nav class="site-nav hidden lg:flex gap-8 text-sm font-medium">
+      <a class="nav-item" href="index.html#hero">Home</a>
+      <a class="nav-item" href="index.html#about">About</a>
+      <a class="nav-item" href="index.html#categories">Categories</a>
+      <a class="nav-item" href="index.html#featured">Featured</a>
+      <a class="nav-item" href="index.html#destinations">Destinations</a>
+      <a class="nav-item site-nav-active" href="packages.html">Packages</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <button id="themeToggle" class="site-theme-btn hidden md:flex items-center gap-2 rounded-full px-3 py-1 text-sm"> <i class="bi bi-moon"></i> Dark</button>
+      <button id="colorThemeToggle" class="site-theme-btn hidden md:flex items-center gap-2 rounded-full px-3 py-1 text-sm"><i class="bi bi-palette-fill"></i> Ocean</button>
+      <a href="package-details.html" class="site-book-btn hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full text-white text-sm font-semibold shadow-lg">View Details</a>
+      <button id="menuToggle" class="site-menu-btn md:hidden text-xl rounded-lg p-2"><i class="bi bi-list"></i></button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="site-mobile-menu hidden text-white p-4">
+    <a href="index.html#hero" class="block py-2">Home</a>
+    <a href="index.html#about" class="block py-2">About</a>
+    <a href="index.html#categories" class="block py-2">Categories</a>
+    <a href="index.html#featured" class="block py-2">Featured</a>
+    <a href="index.html#destinations" class="block py-2">Destinations</a>
+    <a href="packages.html" class="block py-2 site-nav-active">Packages</a>
+    <button id="themeToggleMobile" class="mobile-menu-action mt-3 w-full rounded-full py-2 text-white">Dark Mode</button>
+    <button id="colorThemeToggleMobile" class="mobile-menu-action mt-2 w-full rounded-full py-2 text-white">Palette: Ocean</button>
+  </div>
+</header>
+<main class="layout-shell relative pt-28 pb-10 grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+  <aside class="lg:col-span-4 glass p-6 rounded-2xl shadow-xl">
+    <h2 class="text-xl font-bold mb-4">Filters</h2>
+    <div class="space-y-4">
+      <div>
+        <label class="text-sm font-semibold">Budget range</label>
+        <input type="range" min="0" max="200000" value="200000" id="priceRange" class="w-full mt-2" />
+        <p class="text-xs text-slate-500">Up to ₹<span id="priceValue">2,00,000</span></p>
+      </div>
+      <div>
+        <p class="text-sm font-semibold mb-2">Package category</p>
+        <div id="packageTypeFilters" class="flex flex-wrap gap-2"></div>
+      </div>
+      <div>
+        <p class="text-sm font-semibold mb-2">Signature Collections</p>
+        <div id="signatureFamilyFilters" class="grid gap-2 sm:grid-cols-2">
+          <button type="button" class="signature-filter-btn" data-scope="priority">
+            <span class="signature-filter-title"><i class="bi bi-stars"></i> Signature Blend</span>
+            <span class="signature-filter-subtitle">Train + International + Cruise</span>
+          </button>
+          <button type="button" class="signature-filter-btn" data-scope="north-train">
+            <span class="signature-filter-title"><i class="bi bi-train-front-fill"></i> North Indian Train</span>
+            <span class="signature-filter-subtitle">Rail circuits and heritage routes</span>
+          </button>
+          <button type="button" class="signature-filter-btn" data-scope="international">
+            <span class="signature-filter-title"><i class="bi bi-globe-central-south-asia"></i> International</span>
+            <span class="signature-filter-subtitle">Global multi-country routes</span>
+          </button>
+          <button type="button" class="signature-filter-btn" data-scope="cruise">
+            <span class="signature-filter-title"><i class="bi bi-water"></i> Luxury Cruise</span>
+            <span class="signature-filter-subtitle">Premium sea route experiences</span>
+          </button>
+        </div>
+      </div>
+      <div>
+        <p class="text-sm font-semibold mb-2">Package family</p>
+        <select id="scopeFilter" class="w-full border rounded-lg px-3 py-2 text-sm">
+          <option value="all">All Families</option>
+          <option value="priority">Signature Collections</option>
+          <option value="domestic">Domestic Routes</option>
+          <option value="north-train">North Indian Train</option>
+          <option value="international">International</option>
+          <option value="cruise">Luxury Cruise</option>
+        </select>
+      </div>
+      <div>
+        <p class="text-sm font-semibold mb-2">Sort by</p>
+        <select id="sortOptions" class="w-full border rounded-lg px-3 py-2 text-sm">
+          <option value="rating">Top Rated</option>
+          <option value="price">Lowest Price</option>
+          <option value="name">Route Name</option>
+        </select>
+      </div>
+      <div class="rounded-xl border border-cyan-200/70 bg-cyan-50/70 p-3 text-xs text-slate-600 dark:border-cyan-500/30 dark:bg-cyan-500/10 dark:text-slate-300">
+        <p class="font-semibold text-slate-700 dark:text-slate-200">Itinerary style</p>
+        <p class="mt-1">Routes are listed by locations only, without time-based schedule.</p>
+      </div>
+    </div>
+  </aside>
+  <section class="lg:col-span-8 space-y-6">
+    <div class="flex flex-wrap justify-between items-center gap-4">
+      <h2 class="text-2xl font-bold">Route Packages</h2>
+      <p class="text-sm text-slate-500 dark:text-slate-300">Select a route card to view full location itinerary.</p>
+    </div>
+    <div id="packageList" class="space-y-4"></div>
+  </section>
+</main>
+<footer id="footer" class="relative bg-gradient-to-t from-slate-950 via-slate-900 to-slate-950 text-slate-200 pt-16 pb-10">
+  <div class="layout-shell grid gap-8 md:grid-cols-5">
+    <div>
+      <h5 class="text-xl font-bold text-white mb-3">Jizana</h5>
+      <p class="text-sm text-slate-400">An elite travel experience platform built for modern explorers.</p>
+      <div class="mt-4 flex gap-3 text-2xl text-slate-400">
+        <a href="#" class="hover:text-cyan-300"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="hover:text-cyan-300"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="hover:text-cyan-300"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+    <div>
+      <h6 class="text-lg font-semibold text-white mb-3">Destinations</h6>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><a href="#" class="hover:text-cyan-300">Kerala Tours</a></li>
+        <li><a href="#" class="hover:text-cyan-300">International Packages</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Honeymoon Packages</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Group Tours</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="text-lg font-semibold text-white mb-3">Services</h6>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><a href="#" class="hover:text-cyan-300">Flight Booking</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Hotel & Stay</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Itinerary Planning</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Local Guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="text-lg font-semibold text-white mb-3">Support</h6>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><a href="#" class="hover:text-cyan-300">Help Center</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Terms</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Privacy</a></li>
+        <li><a href="#" class="hover:text-cyan-300">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="text-lg font-semibold text-white mb-3">Contact</h6>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><i class="bi bi-telephone-fill mr-2 text-cyan-300"></i><a data-contact-phone href="tel:+919876543210" class="hover:text-cyan-300">+91 98765 43210</a></li>
+        <li><i class="bi bi-envelope-fill mr-2 text-cyan-300"></i><a data-contact-email href="mailto:support@jizana.com" class="hover:text-cyan-300">support@jizana.com</a></li>
+        <li><i class="bi bi-geo-alt-fill mr-2 text-cyan-300"></i>New Delhi, India</li>
+      </ul>
+      <div class="mt-4">
+        <label class="text-sm font-semibold text-white" for="footerEmail">Subscribe</label>
+        <div class="mt-2 flex gap-2">
+          <input id="footerEmail" type="email" placeholder="Your email" class="w-full rounded-full border border-white/20 bg-slate-900 px-4 py-2 text-sm text-white outline-none focus:border-cyan-400" />
+          <button class="rounded-full bg-cyan-500 px-5 py-2 text-sm font-semibold text-white hover:scale-[1.02] transition">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-10 text-center text-xs text-slate-500">© 2026 Jizana. Designed with love for premium travelers.</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

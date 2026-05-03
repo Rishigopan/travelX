@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jizana — Premium Travel Experiences</title>
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  darkMode: 'class'
+};
+</script>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Caveat:wght@400;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<script src="https://kit.fontawesome.com/4ad0b5c63b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="smooth transition-colors duration-300">
+<header id="siteHeader" class="site-header z-50 shadow-sm">
+  <div class="layout-shell flex items-center justify-between py-3">
+    <a href="index.html" class="flex items-center gap-3">
+      <span class="site-brand-badge w-10 h-10 rounded-full flex items-center justify-center text-white text-lg"><i class="bi bi-airplane-engines-fill"></i></span>
+      <h1 class="site-brand text-lg font-black">Jizana</h1>
+    </a>
+    <nav class="site-nav hidden lg:flex gap-8 text-sm font-medium">
+      <a class="nav-item" href="#hero">Home</a>
+      <a class="nav-item" href="#about">About</a>
+      <a class="nav-item" href="#categories">Categories</a>
+      <a class="nav-item" href="#services">Services</a>
+      <a class="nav-item" href="#featured">Featured</a>
+      <a class="nav-item" href="#destinations">Destinations</a>
+      <a class="nav-item" href="#gallery">Gallery</a>
+      <a class="nav-item" href="packages.html">Packages</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <button id="themeToggle" class="site-theme-btn hidden items-center gap-2 rounded-full px-3 py-1 text-sm"> <i class="bi bi-moon"></i> Dark</button>
+      <button id="colorThemeToggle" class="site-theme-btn hidden md:flex items-center gap-2 rounded-full px-3 py-1 text-sm"><i class="bi bi-palette-fill"></i> Ocean</button>
+      <a href="packages.html" class="site-book-btn hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full text-white text-sm font-semibold shadow-lg">Book Now</a>
+      <button id="menuToggle" class="site-menu-btn md:hidden text-xl rounded-lg p-2"><i class="bi bi-list"></i></button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="site-mobile-menu hidden text-white p-4">
+    <a href="#hero" class="block py-2">Home</a>
+    <a href="#about" class="block py-2">About</a>
+    <a href="#categories" class="block py-2">Categories</a>
+    <a href="#services" class="block py-2">Services</a>
+    <a href="#featured" class="block py-2">Featured</a>
+    <a href="#destinations" class="block py-2">Destinations</a>
+    <a href="#gallery" class="block py-2">Gallery</a>
+    <a href="packages.html" class="block py-2">Packages</a>
+    <button id="themeToggleMobile" class="mobile-menu-action hidden mt-3 w-full rounded-full py-2 text-white">Dark Mode</button>
+    <button id="colorThemeToggleMobile" class="mobile-menu-action mt-2 w-full rounded-full py-2 text-white">Palette: Ocean</button>
+  </div>
+</header>
+<main class="space-y-0">
+  <section id="hero" data-section="hero" class="section-block hero-immersive relative overflow-hidden bg-slate-950 transition-colors dark:bg-slate-950">
+    <div id="heroCarousel" class="hero-immersive-carousel">
+      <img src="assets/images/cdn/picsum-id-1015-1200x800.jpg" alt="Beach sunset view" class="w-full h-full object-cover hero-slide active" />
+      <img src="assets/images/cdn/picsum-id-1020-1200x800.jpg" alt="Mountain landscape view" class="w-full h-full object-cover hero-slide" />
+      <img src="assets/images/cdn/picsum-id-1031-1200x800.jpg" alt="City skyline at dusk" class="w-full h-full object-cover hero-slide" />
+      <img src="assets/images/cdn/picsum-id-1043-1200x800.jpg" alt="Desert golden hour view" class="w-full h-full object-cover hero-slide" />
+    </div>
+
+    <div class="hero-immersive-overlay"></div>
+
+    <div class="section-container layout-shell hero-immersive-content">
+      <div class="hero-immersive-panel">
+        <p class="hero-kicker">Welcome To Jizana</p>
+        <h2 class="hero-display hero-immersive-title">Explore the world in <span class="hero-title-accent">unforgettable style</span>.</h2>
+        <p class="hero-immersive-subtitle">
+          Curated premium journeys, cinematic stays, and travel moments you will remember for life.
+        </p>
+
+        <div class="hero-immersive-actions">
+          <a href="packages.html" class="hero-primary-cta">Explore Packages <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-quote-floating">
+      <p class="hero-poetic-line">"The best views come after the bravest departures."</p>
+    </div>
+
+    <div class="hero-immersive-controls">
+      <div class="hero-slider-dots" aria-label="Hero slide indicators">
+        <button class="hero-dot is-active" data-hero-dot="0" aria-label="Go to slide 1"></button>
+        <button class="hero-dot" data-hero-dot="1" aria-label="Go to slide 2"></button>
+        <button class="hero-dot" data-hero-dot="2" aria-label="Go to slide 3"></button>
+        <button class="hero-dot" data-hero-dot="3" aria-label="Go to slide 4"></button>
+      </div>
+      <div class="hero-slider-nav">
+        <button id="prevHero" class="hero-nav-btn" aria-label="Previous hero image"><i class="bi bi-chevron-left"></i></button>
+        <button id="nextHero" class="hero-nav-btn" aria-label="Next hero image"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" data-section="about" class="section-block relative overflow-hidden bg-slate-50 py-20 transition-colors dark:bg-slate-900/70">
+    <div class="pointer-events-none absolute -top-16 left-1/2 h-64 w-[39rem] -translate-x-1/2 rounded-full bg-cyan-300/16 blur-3xl dark:bg-cyan-500/10"></div>
+    <div class="pointer-events-none absolute top-20 right-10 h-80 w-80 rounded-full bg-blue-300/12 blur-2xl dark:bg-blue-500/10"></div>
+
+    <div class="section-container layout-shell grid w-full gap-10 lg:grid-cols-2">
+      <!-- LEFT: visual storytelling -->
+      <div class="relative order-2 lg:order-1 flex items-center justify-center">
+        <div class="about-visual-aura absolute -left-4 -top-8 h-72 w-72 rounded-3xl shadow-lg"></div>
+        <div class="relative h-[460px] w-full max-w-md overflow-visible">
+          <img src="assets/images/cdn/picsum-id-1012-640x480.jpg"
+               alt="Traveler with luggage"
+               class="absolute left-0 top-0 h-[320px] w-[260px] rounded-3xl object-cover shadow-2xl transform transition duration-500 hover:-translate-y-2 hover:scale-[1.02]"
+               style="clip-path: polygon(0 0, 100% 0, 84% 100%, 0 92%);" />
+          <img src="assets/images/cdn/picsum-id-1016-640x480.jpg"
+               alt="Resort beach"
+               class="absolute -right-4 top-20 h-[280px] w-[260px] rounded-3xl object-cover shadow-2xl transform transition duration-500 hover:translate-x-2 hover:scale-[1.02] border-8 border-white dark:border-slate-900" />
+          <img src="assets/images/cdn/picsum-id-1022-320x240.jpg"
+               alt="Cloud" class="absolute -left-12 bottom-8 h-36 w-36 rounded-full border-4 border-white object-cover shadow-lg dark:border-slate-900" />
+          <div class="absolute right-12 bottom-4 flex h-16 w-16 items-center justify-center rounded-full bg-white/80 shadow-lg dark:bg-slate-900/80">
+            <i class="bi bi-airplane-engines-fill text-cyan-500 text-xl"></i>
+          </div>
+          <span class="absolute left-16 top-8 inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-cyan-600 shadow-sm dark:bg-slate-900/80 dark:text-cyan-300">
+            <i class="bi bi-geo-alt-fill"></i> 200+ Destinations
+          </span>
+        </div>
+      </div>
+
+      <!-- RIGHT: content -->
+      <div class="section-content order-1 flex flex-col justify-center gap-6 lg:order-2">
+        <div class="section-heading section-header">
+          <p class="section-label">About Us</p>
+          <h2 class="section-title">Jizana Tours Designs Seamless Journeys For Every Traveler</h2>
+          <p class="section-subtitle">
+            Jizana Tours brings together comfort, affordability, and unforgettable travel experiences. We design journeys for individuals, families, students, and corporates with a focus on seamless planning and memorable moments. With strong networks across India and abroad, we make your dream destinations easily accessible.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900/70">
+            <span class="flex h-9 w-9 items-center justify-center rounded-full bg-cyan-100 text-cyan-600"><i class="bi bi-shield-lock-fill"></i></span>
+            <span class="text-sm font-semibold text-slate-700 dark:text-slate-100">Secure and reliable booking process</span>
+          </div>
+          <div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900/70">
+            <span class="flex h-9 w-9 items-center justify-center rounded-full bg-blue-100 text-blue-600"><i class="bi bi-emoji-smile-fill"></i></span>
+            <span class="text-sm font-semibold text-slate-700 dark:text-slate-100">Thousands of happy travelers</span>
+          </div>
+          <div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900/70">
+            <span class="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-100 text-emerald-600"><i class="bi bi-map-fill"></i></span>
+            <span class="text-sm font-semibold text-slate-700 dark:text-slate-100">Fully customizable travel plans</span>
+          </div>
+          <div class="flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900/70">
+            <span class="flex h-9 w-9 items-center justify-center rounded-full bg-violet-100 text-violet-600"><i class="bi bi-headset"></i></span>
+            <span class="text-sm font-semibold text-slate-700 dark:text-slate-100">24/7 customer support</span>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <a href="#packages" class="rounded-full bg-gradient-to-r from-cyan-600 to-blue-600 px-6 py-3 text-sm font-bold text-white shadow-lg transition hover:shadow-2xl">Start Booking</a>
+          <a href="#destinations" class="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800">Discover More</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="categories" data-section="categories" class="section-block fade-up bg-white py-20 transition-colors dark:bg-slate-950">
+    <div class="categories-balloon" aria-hidden="true">
+      <img src="assets/illustrations/Plane.svg" alt="" loading="lazy" decoding="async">
+    </div>
+    <div class="pointer-events-none absolute bottom-2 right-2 opacity-55 dark:opacity-45">
+      <img src="assets/illustrations/Pyramid.svg" alt="" class="h-auto w-44 lg:w-56 xl:w-64" loading="lazy" decoding="async">
+    </div>
+    <div class="section-container layout-shell">
+      <div class="section-heading section-header">
+        <p class="section-label">Tour Categories</p>
+        <h2 class="section-title">Travel Styles Crafted For You</h2>
+        <p class="section-subtitle">Choose a category and explore professionally curated experiences across India and international destinations.</p>
+      </div>
+
+      <div class="mb-6 flex items-center justify-end">
+        <a href="packages.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-cyan-600 transition hover:text-cyan-500 dark:text-cyan-300">
+          Explore all categories
+          <i class="bi bi-arrow-right-short text-base"></i>
+        </a>
+      </div>
+
+      <div class="section-content category-grid">
+        <article class="category-card" data-tone="cyan">
+          <div class="category-icon">
+            <img class="category-icon-image" src="assets/icons/international-line.png" alt="International tours line icon" loading="lazy" decoding="async">
+          </div>
+          <h4 class="category-title">International Tours</h4>
+          <p class="category-description">Explore Dubai, Malaysia, Thailand, Singapore and more.</p>
+          <a href="packages.html" class="category-link">View Trips <i class="bi bi-arrow-up-right"></i></a>
+        </article>
+
+        <article class="category-card" data-tone="indigo">
+          <div class="category-icon">
+            <img class="category-icon-image" src="assets/icons/mountain-line.png" alt="Mountain trips line icon" loading="lazy" decoding="async">
+          </div>
+          <h4 class="category-title">Mountain Trips</h4>
+          <p class="category-description">Experience scenic hill stations like Munnar, Coorg, and Manali.</p>
+          <a href="packages.html" class="category-link">View Trips <i class="bi bi-arrow-up-right"></i></a>
+        </article>
+
+        <article class="category-card" data-tone="emerald">
+          <div class="category-icon">
+            <img class="category-icon-image" src="assets/icons/city-line.png" alt="City trips line icon" loading="lazy" decoding="async">
+          </div>
+          <h4 class="category-title">City Trips</h4>
+          <p class="category-description">Discover vibrant cities with culture, shopping, and nightlife.</p>
+          <a href="packages.html" class="category-link">View Trips <i class="bi bi-arrow-up-right"></i></a>
+        </article>
+
+        <article class="category-card" data-tone="rose">
+          <div class="category-icon">
+            <img class="category-icon-image" src="assets/icons/romantic-line.png" alt="Romantic getaways line icon" loading="lazy" decoding="async">
+          </div>
+          <h4 class="category-title">Romantic Getaways</h4>
+          <p class="category-description">Perfect honeymoon and couple-friendly travel packages.</p>
+          <a href="packages.html" class="category-link">View Trips <i class="bi bi-arrow-up-right"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" data-section="services" class="section-block fade-up bg-slate-50 py-20 transition-colors dark:bg-slate-900/70">
+    <div class="section-container layout-shell">
+      <div class="section-heading section-header">
+        <p class="section-label">Our Services</p>
+        <h2 class="section-title">Travel Services For Every Journey</h2>
+        <p class="section-subtitle">From tour planning and ticketing to reservations and on-trip support, choose from our complete travel services.</p>
+      </div>
+
+      <div class="flex flex-wrap gap-2 justify-center mb-8">
+        <button class="service-filter-pill active" data-filter="transport">Transport</button>
+        <button class="service-filter-pill" data-filter="tours">Tours</button>
+        <button class="service-filter-pill" data-filter="stays">Stays</button>
+        <button class="service-filter-pill" data-filter="support">Support</button>
+      </div>
+
+      <div class="section-content service-grid">
+        <article class="service-card" data-category="tours">
+          <div class="service-image-wrap">
+            <img class="service-image" src="assets/images/cdn/picsum-id-1013-700x500.jpg" alt="Customized tour packages service" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3 class="service-title">Customized Tour Packages</h3>
+            <p class="service-description">Tailor-made itineraries based on your budget, dates, and travel style.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="stays">
+          <div class="service-image-wrap">
+            <img class="service-image" src="assets/images/cdn/picsum-id-1018-600x400.jpg" alt="Camp stay service" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3 class="service-title">Camp Stay</h3>
+            <p class="service-description">Curated outdoor stays with safe locations and complete camp support.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="support">
+          <div class="service-image-wrap">
+            <img class="service-image" src="assets/images/cdn/picsum-id-1029-600x400.jpg" alt="Event management service" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3 class="service-title">Event Management</h3>
+            <p class="service-description">Destination events planned end-to-end for teams, families, and groups.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="tours">
+          <div class="service-image-wrap">
+            <img class="service-image" src="assets/images/cdn/picsum-id-1011-900x600.jpg" alt="School and college tours service" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3 class="service-title">School and College Tours</h3>
+            <p class="service-description">Structured educational tours with transport, stay, and coordination.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="tours">
+          <div class="service-image-wrap">
+            <img class="service-image" src="assets/images/cdn/picsum-id-1042-600x400.jpg" alt="Pilgrimage tour packages service" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3 class="service-title">Pilgrimage Tour Packages</h3>
+            <p class="service-description">Comfort-first spiritual journeys with guided schedules and stays.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="stays">
+          <div class="service-image-wrap">
+            <img class="service-image" src="assets/images/cdn/picsum-id-1016-600x400.jpg" alt="House boat reservations service" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3 class="service-title">House Boat Reservations</h3>
+            <p class="service-description">Book premium house boats with meal plans and cruise options.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="transport">
+          <div class="service-image-wrap">
+            <img class="service-image" src="assets/images/Bus_ticket_booking.jpg" alt="Luxury bus ticketing service" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3 class="service-title">Luxury Bus Ticketing</h3>
+            <p class="service-description">Reserve premium bus seats with trusted operators and support.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="transport">
+          <div class="service-image-wrap">
+            <img class="service-image" src="assets/images/Domestic_air_ticket.jpg" alt="Domestic air ticketing service" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3 class="service-title">Domestic Air Ticketing</h3>
+            <p class="service-description">Fast domestic flight bookings with fare comparisons and alerts.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="transport">
+          <div class="service-image-wrap">
+            <img class="service-image" src="assets/images/Luxury_car_rental.jpg" alt="Luxury car rental service" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3 class="service-title">Luxury Cars for Rent</h3>
+            <p class="service-description">Premium car rentals with drivers for local and outstation trips.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="stays">
+          <div class="service-image-wrap">
+            <img class="service-image" src="assets/images/cdn/picsum-id-1006-700x500.jpg" alt="Hotel reservations service" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3 class="service-title">Hotel Reservations</h3>
+            <p class="service-description">Handpicked hotels across budgets with transparent inclusions.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="support">
+          <div class="service-image-wrap">
+            <img class="service-image" src="assets/images/cdn/picsum-id-1035-700x500.jpg" alt="Visa services" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3 class="service-title">Visa Services</h3>
+            <p class="service-description">Assistance with documentation, appointment flow, and tracking.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="transport">
+          <div class="service-image-wrap">
+            <img class="service-image" src="assets/images/Train_booking.jpg" alt="Train booking service" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3 class="service-title">Train Booking</h3>
+            <p class="service-description">Convenient train reservations with class options and updates.</p>
+          </div>
+        </article>
+
+        <article class="service-card" data-category="support">
+          <div class="service-image-wrap">
+            <img class="service-image" src="assets/images/cdn/picsum-id-1025-700x500.jpg" alt="Travel photography service" loading="lazy" decoding="async">
+          </div>
+          <div class="service-copy">
+            <h3 class="service-title">Photography</h3>
+            <p class="service-description">Capture your journeys with professional travel photo sessions.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured" data-section="featured" class="section-block fade-up bg-white py-20 transition-colors dark:bg-slate-950">
+    <div class="section-container layout-shell">
+      <div class="section-heading section-header">
+        <p class="section-label">Featured Packages</p>
+        <h2 class="section-title">Featured Packages</h2>
+        <p class="section-subtitle">Top-rated plans curated for comfort, value, and adventure.</p>
+      </div>
+
+      <div class="section-content mt-8">
+        <div class="mb-5 flex flex-wrap items-center justify-between gap-3">
+          <a href="packages.html" class="text-sm font-semibold text-cyan-600 hover:text-cyan-500 dark:text-cyan-300">
+            Browse All Packages <i class="bi bi-arrow-right-short"></i>
+          </a>
+        </div>
+
+        <div id="featuredPackagesGrid" class="grid gap-6 md:grid-cols-2 xl:grid-cols-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="destinations" data-section="destinations" class="section-block fade-up rounded-3xl bg-slate-50 py-20 transition-colors dark:bg-slate-900/70">
+    <div class="destinations-flight" aria-hidden="true">
+      <svg viewBox="0 0 360 200" class="destinations-flight-svg" role="presentation" focusable="false">
+        <path class="destinations-flight-path" d="M 24 166 C 124 24, 262 24, 344 110" />
+      </svg>
+      <img class="destinations-flight-plane" src="assets/icons/flight-airplane-line.png" alt="" loading="lazy" decoding="async">
+    </div>
+    <div class="section-container layout-shell">
+      <div class="section-heading section-header">
+        <p class="section-label">Popular Destinations</p>
+        <h2 class="section-title">Popular Destinations</h2>
+        <p class="section-subtitle">Explore handpicked cities and escapes for every style of traveler.</p>
+      </div>
+      <div class="flex justify-end mb-6">
+        <a href="packages.html" class="text-cyan-500 font-semibold">See all destinations</a>
+      </div>
+      <div class="section-content mt-8">
+        <div id="destinationsGrid" class="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" data-section="testimonials" class="section-block bg-white py-20 transition-colors dark:bg-slate-950">
+    <div class="section-container layout-shell">
+      <div class="section-heading section-header">
+        <p class="section-label">Testimonials</p>
+        <h2 class="section-title">Traveler Stories</h2>
+        <p class="section-subtitle">Real feedback from premium journeys curated by Jizana.</p>
+      </div>
+
+      <div class="section-content testimonials-wrap relative mt-10">
+        <div class="testimonials-aura testimonials-aura-left" aria-hidden="true"></div>
+        <div class="testimonials-aura testimonials-aura-right" aria-hidden="true"></div>
+
+        <div class="testimonial-shell">
+          <div class="testimonial-viewport overflow-hidden">
+            <div id="testimonialTrack" class="flex transition-transform duration-700 ease-out">
+              <article data-testimonial-slide class="testimonial-slide w-full shrink-0">
+                <div class="testimonial-slide-inner">
+                  <div class="testimonial-slide-head">
+                    <div class="testimonial-stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <div class="testimonial-quote-icon" aria-hidden="true"><i class="bi bi-quote"></i></div>
+                  <p class="testimonial-quote">
+                    “From airport pickup to resort check-in, everything felt effortless. The team balanced comfort, timing, and local experiences perfectly.”
+                  </p>
+                  <div class="testimonial-author-row">
+                    <span class="testimonial-avatar">A</span>
+                    <div>
+                      <p class="testimonial-author-name">Aisha P.</p>
+                      <p class="testimonial-author-meta">Bali • Couple Trip</p>
+                    </div>
+                    <span class="testimonial-route-tag">Couple Escape</span>
+                  </div>
+                </div>
+              </article>
+
+              <article data-testimonial-slide class="testimonial-slide w-full shrink-0">
+                <div class="testimonial-slide-inner">
+                  <div class="testimonial-slide-head">
+                    <div class="testimonial-stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                    </div>
+                  </div>
+                  <div class="testimonial-quote-icon" aria-hidden="true"><i class="bi bi-quote"></i></div>
+                  <p class="testimonial-quote">
+                    “The itinerary pacing was perfect for our family. Support replies were quick, and every booking detail was clearly communicated.”
+                  </p>
+                  <div class="testimonial-author-row">
+                    <span class="testimonial-avatar">R</span>
+                    <div>
+                      <p class="testimonial-author-name">Rohit S.</p>
+                      <p class="testimonial-author-meta">Dubai • Family Trip</p>
+                    </div>
+                    <span class="testimonial-route-tag">Family Route</span>
+                  </div>
+                </div>
+              </article>
+
+              <article data-testimonial-slide class="testimonial-slide w-full shrink-0">
+                <div class="testimonial-slide-inner">
+                  <div class="testimonial-slide-head">
+                    <div class="testimonial-stars">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <div class="testimonial-quote-icon" aria-hidden="true"><i class="bi bi-quote"></i></div>
+                  <p class="testimonial-quote">
+                    “I traveled solo and felt secure throughout. Hotels were great, transfers were timely, and recommendations felt genuinely curated.”
+                  </p>
+                  <div class="testimonial-author-row">
+                    <span class="testimonial-avatar">N</span>
+                    <div>
+                      <p class="testimonial-author-name">Neha S.</p>
+                      <p class="testimonial-author-meta">Tokyo • Solo Trip</p>
+                    </div>
+                    <span class="testimonial-route-tag">Solo Discovery</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-controls">
+          <div id="testimonialDots" class="testimonial-dots">
+            <button type="button" data-testimonial-dot="0" class="testimonial-dot is-active" aria-label="Show testimonial 1" aria-current="true"></button>
+            <button type="button" data-testimonial-dot="1" class="testimonial-dot" aria-label="Show testimonial 2" aria-current="false"></button>
+            <button type="button" data-testimonial-dot="2" class="testimonial-dot" aria-label="Show testimonial 3" aria-current="false"></button>
+          </div>
+          <div class="testimonial-nav">
+            <button id="testimonialPrev" type="button" class="testimonial-nav-btn" aria-label="Previous testimonial">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button id="testimonialNext" type="button" class="testimonial-nav-btn" aria-label="Next testimonial">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" data-section="gallery" class="section-block our-gallery-section bg-slate-50 py-20 transition-colors dark:bg-slate-900/70">
+    <div class="section-container layout-shell">
+      <div class="section-heading section-header">
+        <p class="section-label">Our Gallery</p>
+        <h2 class="section-title">Captured Travel Moments</h2>
+        <p class="section-subtitle">Browse recent journey highlights from our traveler gallery.</p>
+      </div>
+
+      <div class="section-content gallery-slider-shell">
+        <div class="gallery-swiper swiper" aria-label="Travel gallery image slider">
+          <div id="galleryTrack" class="swiper-wrapper"></div>
+        </div>
+
+        <div class="gallery-slider-controls">
+          <button id="galleryPrev" type="button" class="gallery-nav-btn" aria-label="Previous gallery image">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <div class="gallery-pagination"></div>
+          <button id="galleryNext" type="button" class="gallery-nav-btn" aria-label="Next gallery image">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="galleryLightbox" class="gallery-lightbox" aria-hidden="true">
+    <div class="gallery-lightbox-backdrop" data-gallery-close></div>
+    <div class="gallery-lightbox-panel" role="dialog" aria-modal="true" aria-label="Gallery image viewer">
+      <button id="galleryLightboxClose" type="button" class="gallery-lightbox-close" aria-label="Close gallery viewer">
+        <i class="bi bi-x-lg"></i>
+      </button>
+      <button id="galleryLightboxPrev" type="button" class="gallery-lightbox-nav gallery-lightbox-prev" aria-label="Previous gallery image">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <img id="galleryLightboxImage" src="" alt="" class="gallery-lightbox-image">
+      <button id="galleryLightboxNext" type="button" class="gallery-lightbox-nav gallery-lightbox-next" aria-label="Next gallery image">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+      <div id="galleryLightboxCounter" class="gallery-lightbox-counter" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <section id="cta" data-section="cta" class="section-block relative overflow-hidden bg-slate-50 py-20 transition-colors dark:bg-slate-900/70">
+    <div class="cta-theme-aura pointer-events-none absolute inset-0"></div>
+    <div class="pointer-events-none absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-400/10"></div>
+
+    <div class="section-container layout-shell relative">
+      <div class="section-content grid gap-10 overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white/85 p-8 shadow-[0_24px_70px_rgba(15,23,42,0.16)] backdrop-blur md:p-12 lg:grid-cols-12 lg:items-center dark:border-white/10 dark:bg-slate-950/90 dark:shadow-[0_24px_70px_rgba(2,6,23,0.55)]">
+        <div class="lg:col-span-7">
+          <div class="section-header">
+          
+          <h2 class="mt-5 text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl lg:text-[2.8rem] dark:text-white">
+            Plan Your
+            <span class="bg-gradient-to-r from-cyan-600 via-sky-600 to-blue-600 bg-clip-text text-transparent dark:from-cyan-300 dark:via-sky-400 dark:to-blue-500"> Dream Trip Today</span>
+          </h2>
+          <p class="mt-4 max-w-2xl text-sm text-slate-600 sm:text-base dark:text-slate-300">
+            Tell us your destination, budget, and travel month — we’ll handle the rest.
+          </p>
+          </div>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="packages.html" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-7 py-3 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:shadow-cyan-500/30">
+              Explore Packages
+              <i class="bi bi-arrow-up-right-circle-fill"></i>
+            </a>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3 text-xs text-slate-700 dark:text-slate-200">
+            <span class="rounded-full border border-slate-200 bg-white/70 px-3 py-1.5 dark:border-white/15 dark:bg-white/5"><i class="bi bi-shield-check mr-1.5 text-cyan-600 dark:text-cyan-300"></i>Secure payments</span>
+            <span class="rounded-full border border-slate-200 bg-white/70 px-3 py-1.5 dark:border-white/15 dark:bg-white/5"><i class="bi bi-headset mr-1.5 text-cyan-600 dark:text-cyan-300"></i>24/7 concierge</span>
+            <span class="rounded-full border border-slate-200 bg-white/70 px-3 py-1.5 dark:border-white/15 dark:bg-white/5"><i class="bi bi-people mr-1.5 text-cyan-600 dark:text-cyan-300"></i>2,500+ happy travelers</span>
+          </div>
+        </div>
+
+        <aside class="relative lg:col-span-5">
+          <div class="absolute -right-8 -top-8 h-28 w-28 rounded-full bg-cyan-400/20 blur-2xl"></div>
+          <div class="absolute -left-8 -bottom-8 h-24 w-24 rounded-full bg-blue-500/20 blur-2xl"></div>
+          <div class="relative rounded-3xl border border-slate-200 bg-white/80 p-6 backdrop-blur dark:border-white/15 dark:bg-white/10">
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Plan Your Dream Trip Today</h3>
+            <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Tell us your destination, budget, and travel month — we’ll handle the rest.</p>
+
+            <form id="customPlanForm" class="mt-5 space-y-3">
+              <input id="customPlanDestination" type="text" placeholder="Where do you want to go?" required class="w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 outline-none focus:border-cyan-500 dark:border-white/20 dark:bg-slate-900/70 dark:text-white dark:focus:border-cyan-300" />
+              <div class="grid grid-cols-2 gap-3">
+                <input id="customPlanMonth" type="text" placeholder="Preferred travel month" class="w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 outline-none focus:border-cyan-500 dark:border-white/20 dark:bg-slate-900/70 dark:text-white dark:focus:border-cyan-300" />
+                <input id="customPlanBudget" type="text" placeholder="Your budget" class="w-full rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-400 outline-none focus:border-cyan-500 dark:border-white/20 dark:bg-slate-900/70 dark:text-white dark:focus:border-cyan-300" />
+              </div>
+              <button id="customPlanWhatsappBtn" data-whatsapp="+91 98765 43210" type="submit" class="w-full rounded-xl bg-slate-900 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100">Chat on WhatsApp</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="footer" class="relative bg-gradient-to-t from-slate-950 via-slate-900 to-slate-950 text-slate-200 pt-16 pb-10">
+  <div class="layout-shell grid gap-8 md:grid-cols-5">
+    <div>
+      <h5 class="text-xl font-bold text-white mb-3">Jizana</h5>
+      <p class="text-sm text-slate-400">An elite travel experience platform built for modern explorers.</p>
+      <div class="mt-4 flex gap-3 text-2xl text-slate-400">
+        <a href="#" class="hover:text-cyan-300"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="hover:text-cyan-300"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="hover:text-cyan-300"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+    <div>
+      <h6 class="text-lg font-semibold text-white mb-3">Destinations</h6>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><a href="#" class="hover:text-cyan-300">Kerala Tours</a></li>
+        <li><a href="#" class="hover:text-cyan-300">International Packages</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Honeymoon Packages</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Group Tours</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="text-lg font-semibold text-white mb-3">Services</h6>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><a href="#" class="hover:text-cyan-300">Flight Booking</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Hotel & Stay</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Itinerary Planning</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Local Guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="text-lg font-semibold text-white mb-3">Support</h6>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><a href="#" class="hover:text-cyan-300">Help Center</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Terms</a></li>
+        <li><a href="#" class="hover:text-cyan-300">Privacy</a></li>
+        <li><a href="#" class="hover:text-cyan-300">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h6 class="text-lg font-semibold text-white mb-3">Contact</h6>
+      <ul class="space-y-2 text-sm text-slate-400">
+        <li><i class="bi bi-telephone-fill mr-2 text-cyan-300"></i><a data-contact-phone href="tel:+919876543210" class="hover:text-cyan-300">+91 98765 43210</a></li>
+        <li><i class="bi bi-envelope-fill mr-2 text-cyan-300"></i><a data-contact-email href="mailto:support@jizana.com" class="hover:text-cyan-300">support@jizana.com</a></li>
+        <li><i class="bi bi-geo-alt-fill mr-2 text-cyan-300"></i>New Delhi, India</li>
+      </ul>
+      <div class="mt-4">
+        <label class="text-sm font-semibold text-white" for="footerEmail">Subscribe</label>
+        <div class="mt-2 flex gap-2">
+          <input id="footerEmail" type="email" placeholder="Your email" class="w-full rounded-full border border-white/20 bg-slate-900 px-4 py-2 text-sm text-white outline-none focus:border-cyan-400" />
+          <button class="rounded-full bg-cyan-500 px-5 py-2 text-sm font-semibold text-white hover:scale-[1.02] transition">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-10 text-center text-xs text-slate-500">© 2026 Jizana. Designed with love for premium travelers.</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1555 @@
+{
+  "contact": {
+    "whatsapp": "+91 98765 43210",
+    "phone": "+91 98765 43210",
+    "email": "support@jizana.com"
+  },
+  "featuredPackages": [
+    {
+      "id": 1,
+      "name": "Thenmala – Palaruvi – Courtallam Falls",
+      "category": "one-day",
+      "rating": 4.7,
+      "badge": "Popular",
+      "image": "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+      "desc": "Route itinerary: Thenmala – Palaruvi – Courtallam Falls.",
+      "markerColor": "cyan",
+      "tag": "One Day Packages"
+    },
+    {
+      "id": 11,
+      "name": "Kodaikanal – Marayoor – Munnar",
+      "category": "three-days-four-nights",
+      "rating": 4.9,
+      "badge": "Popular",
+      "image": "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+      "desc": "Route itinerary: Kodaikanal – Marayoor – Munnar.",
+      "markerColor": "indigo",
+      "tag": "Three Days & Four Nights"
+    },
+    {
+      "id": 21,
+      "name": "Udupi – Dandeli – Chikmagalur – Mysore – Ooty",
+      "category": "five-days-six-nights",
+      "rating": 4.7,
+      "badge": "Popular",
+      "image": "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+      "desc": "Route itinerary: Udupi – Dandeli – Chikmagalur – Mysore – Ooty.",
+      "markerColor": "rose",
+      "tag": "Five Days & Six Nights"
+    },
+    {
+      "id": 27,
+      "name": "Udupi – Dandeli – Goa – Hampi – Bengaluru",
+      "category": "six-days-seven-nights",
+      "rating": 4.9,
+      "badge": "Popular",
+      "image": "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+      "desc": "Route itinerary: Udupi – Dandeli – Goa – Hampi – Bengaluru.",
+      "markerColor": "emerald",
+      "tag": "Six Days & Seven Nights"
+    },
+    {
+      "id": 30,
+      "name": "Delhi – Manali – Rajasthan – Shimla – Jaipur",
+      "category": "north-indian-train",
+      "rating": 4.8,
+      "badge": "Popular",
+      "image": "assets/images/cdn/picsum-id-1002-1200x800.jpg",
+      "desc": "Route itinerary: Delhi – Manali – Rajasthan – Shimla – Jaipur.",
+      "markerColor": "blue",
+      "tag": "North Indian Train Packages"
+    },
+    {
+      "id": 32,
+      "name": "Kolkata – Darjeeling – Gangtok – Sikkim",
+      "category": "north-indian-train",
+      "rating": 4.6,
+      "badge": "Popular",
+      "image": "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+      "desc": "Route itinerary: Kolkata – Darjeeling – Gangtok – Sikkim.",
+      "markerColor": "amber",
+      "tag": "North Indian Train Packages"
+    }
+  ],
+  "popularDestinations": [
+    {
+      "id": 1,
+      "name": "Paris",
+      "country": "France",
+      "description": "City lights, boutique stays, river cruises, and classic café culture.",
+      "image": "assets/images/cdn/picsum-id-1056-1200x800.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Maldives",
+      "country": "Indian Ocean",
+      "description": "Overwater villas, private beaches, and crystal-clear lagoon escapes.",
+      "image": "assets/images/cdn/picsum-id-1057-1200x800.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Shimla",
+      "country": "India",
+      "description": "Mountain charm, pine forests, toy train routes, and cozy hillside stays.",
+      "image": "assets/images/cdn/picsum-id-1059-1200x800.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Kyoto",
+      "country": "Japan",
+      "description": "Temples, seasonal gardens, and refined cultural districts with premium ryokans.",
+      "image": "assets/images/cdn/picsum-id-1040-1200x800.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Santorini",
+      "country": "Greece",
+      "description": "White cliffside homes, caldera sunsets, and sea-view suites for slow luxury.",
+      "image": "assets/images/cdn/picsum-id-1011-1200x800.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Cappadocia",
+      "country": "Turkey",
+      "description": "Fairy-chimney valleys, cave hotels, and sunrise hot-air balloon panoramas.",
+      "image": "assets/images/cdn/picsum-id-1002-1200x800.jpg"
+    }
+  ],
+  "packages": [
+    {
+      "id": 1,
+      "name": "Thenmala – Palaruvi – Courtallam Falls",
+      "category": "one-day",
+      "packageType": "one-day",
+      "packageTypeLabel": "One Day Packages",
+      "duration": 3,
+      "durationLabel": "One Day",
+      "scope": "domestic",
+      "price": 5900,
+      "rating": 4.7,
+      "reviews": 129,
+      "tag": "Popular",
+      "desc": "Route itinerary: Thenmala – Palaruvi – Courtallam Falls.",
+      "image": "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Thenmala",
+        "Palaruvi",
+        "Courtallam Falls"
+      ],
+      "highlights": [
+        "3 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Kochi Wonderla – Lulu Shopping Mall",
+      "category": "one-day",
+      "packageType": "one-day",
+      "packageTypeLabel": "One Day Packages",
+      "duration": 2,
+      "durationLabel": "One Day",
+      "scope": "domestic",
+      "price": 7700,
+      "rating": 4.8,
+      "reviews": 138,
+      "tag": "Popular",
+      "desc": "Route itinerary: Kochi Wonderla – Lulu Shopping Mall.",
+      "image": "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Kochi Wonderla",
+        "Lulu Shopping Mall"
+      ],
+      "highlights": [
+        "2 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Vagamon / Kanyakumari",
+      "category": "one-day",
+      "packageType": "one-day",
+      "packageTypeLabel": "One Day Packages",
+      "duration": 2,
+      "durationLabel": "One Day",
+      "scope": "domestic",
+      "price": 9500,
+      "rating": 4.9,
+      "reviews": 147,
+      "tag": "Popular",
+      "desc": "Route itinerary: Vagamon / Kanyakumari.",
+      "image": "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Vagamon",
+        "Kanyakumari"
+      ],
+      "highlights": [
+        "2 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Trivandrum – Poovar",
+      "category": "one-day",
+      "packageType": "one-day",
+      "packageTypeLabel": "One Day Packages",
+      "duration": 2,
+      "durationLabel": "One Day",
+      "scope": "domestic",
+      "price": 11300,
+      "rating": 4.6,
+      "reviews": 156,
+      "tag": "Popular",
+      "desc": "Route itinerary: Trivandrum – Poovar.",
+      "image": "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Trivandrum",
+        "Poovar"
+      ],
+      "highlights": [
+        "2 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Kodaikanal – Munnar",
+      "category": "two-days-three-nights",
+      "packageType": "two-days-three-nights",
+      "packageTypeLabel": "Two Days & Three Nights",
+      "duration": 2,
+      "durationLabel": "Two Days & Three Nights",
+      "scope": "domestic",
+      "price": 13300,
+      "rating": 4.7,
+      "reviews": 165,
+      "tag": "Popular",
+      "desc": "Route itinerary: Kodaikanal – Munnar.",
+      "image": "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Kodaikanal",
+        "Munnar"
+      ],
+      "highlights": [
+        "2 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Marayoor – Munnar",
+      "category": "two-days-three-nights",
+      "packageType": "two-days-three-nights",
+      "packageTypeLabel": "Two Days & Three Nights",
+      "duration": 2,
+      "durationLabel": "Two Days & Three Nights",
+      "scope": "domestic",
+      "price": 15100,
+      "rating": 4.8,
+      "reviews": 174,
+      "tag": "Popular",
+      "desc": "Route itinerary: Marayoor – Munnar.",
+      "image": "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Marayoor",
+        "Munnar"
+      ],
+      "highlights": [
+        "2 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Mysore – Coorg",
+      "category": "two-days-three-nights",
+      "packageType": "two-days-three-nights",
+      "packageTypeLabel": "Two Days & Three Nights",
+      "duration": 2,
+      "durationLabel": "Two Days & Three Nights",
+      "scope": "domestic",
+      "price": 16900,
+      "rating": 4.9,
+      "reviews": 183,
+      "tag": "Popular",
+      "desc": "Route itinerary: Mysore – Coorg.",
+      "image": "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1002-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Mysore",
+        "Coorg"
+      ],
+      "highlights": [
+        "2 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Wayanad – Ooty / Mysore",
+      "category": "two-days-three-nights",
+      "packageType": "two-days-three-nights",
+      "packageTypeLabel": "Two Days & Three Nights",
+      "duration": 3,
+      "durationLabel": "Two Days & Three Nights",
+      "scope": "domestic",
+      "price": 18700,
+      "rating": 4.6,
+      "reviews": 192,
+      "tag": "Popular",
+      "desc": "Route itinerary: Wayanad – Ooty / Mysore.",
+      "image": "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1002-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1015-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Wayanad",
+        "Ooty",
+        "Mysore"
+      ],
+      "highlights": [
+        "3 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Ooty – Mysore",
+      "category": "two-days-three-nights",
+      "packageType": "two-days-three-nights",
+      "packageTypeLabel": "Two Days & Three Nights",
+      "duration": 2,
+      "durationLabel": "Two Days & Three Nights",
+      "scope": "domestic",
+      "price": 20500,
+      "rating": 4.7,
+      "reviews": 201,
+      "tag": "Popular",
+      "desc": "Route itinerary: Ooty – Mysore.",
+      "image": "assets/images/cdn/picsum-id-1011-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1002-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Ooty",
+        "Mysore"
+      ],
+      "highlights": [
+        "2 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Coorg – Mysore – Ooty",
+      "category": "three-days-four-nights",
+      "packageType": "three-days-four-nights",
+      "packageTypeLabel": "Three Days & Four Nights",
+      "duration": 3,
+      "durationLabel": "Three Days & Four Nights",
+      "scope": "domestic",
+      "price": 17700,
+      "rating": 4.8,
+      "reviews": 210,
+      "tag": "Popular",
+      "desc": "Route itinerary: Coorg – Mysore – Ooty.",
+      "image": "assets/images/cdn/picsum-id-1002-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1002-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Coorg",
+        "Mysore",
+        "Ooty"
+      ],
+      "highlights": [
+        "3 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Kodaikanal – Marayoor – Munnar",
+      "category": "three-days-four-nights",
+      "packageType": "three-days-four-nights",
+      "packageTypeLabel": "Three Days & Four Nights",
+      "duration": 3,
+      "durationLabel": "Three Days & Four Nights",
+      "scope": "domestic",
+      "price": 19500,
+      "rating": 4.9,
+      "reviews": 219,
+      "tag": "Popular",
+      "desc": "Route itinerary: Kodaikanal – Marayoor – Munnar.",
+      "image": "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Kodaikanal",
+        "Marayoor",
+        "Munnar"
+      ],
+      "highlights": [
+        "3 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Mysore – Chikmagalur / Belur – Coorg",
+      "category": "three-days-four-nights",
+      "packageType": "three-days-four-nights",
+      "packageTypeLabel": "Three Days & Four Nights",
+      "duration": 4,
+      "durationLabel": "Three Days & Four Nights",
+      "scope": "domestic",
+      "price": 21300,
+      "rating": 4.6,
+      "reviews": 228,
+      "tag": "Popular",
+      "desc": "Route itinerary: Mysore – Chikmagalur / Belur – Coorg.",
+      "image": "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Mysore",
+        "Chikmagalur",
+        "Belur",
+        "Coorg"
+      ],
+      "highlights": [
+        "4 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Coorg – Belur – Wayanad",
+      "category": "three-days-four-nights",
+      "packageType": "three-days-four-nights",
+      "packageTypeLabel": "Three Days & Four Nights",
+      "duration": 3,
+      "durationLabel": "Three Days & Four Nights",
+      "scope": "domestic",
+      "price": 23100,
+      "rating": 4.7,
+      "reviews": 237,
+      "tag": "Popular",
+      "desc": "Route itinerary: Coorg – Belur – Wayanad.",
+      "image": "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Coorg",
+        "Belur",
+        "Wayanad"
+      ],
+      "highlights": [
+        "3 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Coorg – Mysore / Chikmagalur – Bengaluru",
+      "category": "three-days-four-nights",
+      "packageType": "three-days-four-nights",
+      "packageTypeLabel": "Three Days & Four Nights",
+      "duration": 4,
+      "durationLabel": "Three Days & Four Nights",
+      "scope": "domestic",
+      "price": 24900,
+      "rating": 4.8,
+      "reviews": 246,
+      "tag": "Popular",
+      "desc": "Route itinerary: Coorg – Mysore / Chikmagalur – Bengaluru.",
+      "image": "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Coorg",
+        "Mysore",
+        "Chikmagalur",
+        "Bengaluru"
+      ],
+      "highlights": [
+        "4 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Coorg – Mysore – Chikmagalur – Bengaluru",
+      "category": "four-days-five-nights",
+      "packageType": "four-days-five-nights",
+      "packageTypeLabel": "Four Days & Five Nights",
+      "duration": 4,
+      "durationLabel": "Four Days & Five Nights",
+      "scope": "domestic",
+      "price": 24100,
+      "rating": 4.9,
+      "reviews": 255,
+      "tag": "Popular",
+      "desc": "Route itinerary: Coorg – Mysore – Chikmagalur – Bengaluru.",
+      "image": "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Coorg",
+        "Mysore",
+        "Chikmagalur",
+        "Bengaluru"
+      ],
+      "highlights": [
+        "4 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Coorg – Goa – Udupi",
+      "category": "four-days-five-nights",
+      "packageType": "four-days-five-nights",
+      "packageTypeLabel": "Four Days & Five Nights",
+      "duration": 3,
+      "durationLabel": "Four Days & Five Nights",
+      "scope": "domestic",
+      "price": 25900,
+      "rating": 4.6,
+      "reviews": 264,
+      "tag": "Popular",
+      "desc": "Route itinerary: Coorg – Goa – Udupi.",
+      "image": "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Coorg",
+        "Goa",
+        "Udupi"
+      ],
+      "highlights": [
+        "3 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Mysore – Belur – Coorg – Wayanad",
+      "category": "four-days-five-nights",
+      "packageType": "four-days-five-nights",
+      "packageTypeLabel": "Four Days & Five Nights",
+      "duration": 4,
+      "durationLabel": "Four Days & Five Nights",
+      "scope": "domestic",
+      "price": 27700,
+      "rating": 4.7,
+      "reviews": 273,
+      "tag": "Popular",
+      "desc": "Route itinerary: Mysore – Belur – Coorg – Wayanad.",
+      "image": "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1002-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Mysore",
+        "Belur",
+        "Coorg",
+        "Wayanad"
+      ],
+      "highlights": [
+        "4 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Udupi – Chikmagalur – Belur – Coorg",
+      "category": "four-days-five-nights",
+      "packageType": "four-days-five-nights",
+      "packageTypeLabel": "Four Days & Five Nights",
+      "duration": 4,
+      "durationLabel": "Four Days & Five Nights",
+      "scope": "domestic",
+      "price": 29500,
+      "rating": 4.8,
+      "reviews": 282,
+      "tag": "Popular",
+      "desc": "Route itinerary: Udupi – Chikmagalur – Belur – Coorg.",
+      "image": "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1002-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1015-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Udupi",
+        "Chikmagalur",
+        "Belur",
+        "Coorg"
+      ],
+      "highlights": [
+        "4 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Hogenakkal – Mysore – Chikmagalur – Coorg",
+      "category": "four-days-five-nights",
+      "packageType": "four-days-five-nights",
+      "packageTypeLabel": "Four Days & Five Nights",
+      "duration": 4,
+      "durationLabel": "Four Days & Five Nights",
+      "scope": "domestic",
+      "price": 31300,
+      "rating": 4.9,
+      "reviews": 291,
+      "tag": "Popular",
+      "desc": "Route itinerary: Hogenakkal – Mysore – Chikmagalur – Coorg.",
+      "image": "assets/images/cdn/picsum-id-1011-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1002-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Hogenakkal",
+        "Mysore",
+        "Chikmagalur",
+        "Coorg"
+      ],
+      "highlights": [
+        "4 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Coorg – Goa – Dandeli – Udupi / Chikmagalur",
+      "category": "five-days-six-nights",
+      "packageType": "five-days-six-nights",
+      "packageTypeLabel": "Five Days & Six Nights",
+      "duration": 5,
+      "durationLabel": "Five Days & Six Nights",
+      "scope": "domestic",
+      "price": 30500,
+      "rating": 4.6,
+      "reviews": 300,
+      "tag": "Popular",
+      "desc": "Route itinerary: Coorg – Goa – Dandeli – Udupi / Chikmagalur.",
+      "image": "assets/images/cdn/picsum-id-1002-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1002-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Coorg",
+        "Goa",
+        "Dandeli",
+        "Udupi",
+        "Chikmagalur"
+      ],
+      "highlights": [
+        "5 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Udupi – Dandeli – Chikmagalur – Mysore – Ooty",
+      "category": "five-days-six-nights",
+      "packageType": "five-days-six-nights",
+      "packageTypeLabel": "Five Days & Six Nights",
+      "duration": 5,
+      "durationLabel": "Five Days & Six Nights",
+      "scope": "domestic",
+      "price": 32300,
+      "rating": 4.7,
+      "reviews": 309,
+      "tag": "Popular",
+      "desc": "Route itinerary: Udupi – Dandeli – Chikmagalur – Mysore – Ooty.",
+      "image": "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Udupi",
+        "Dandeli",
+        "Chikmagalur",
+        "Mysore",
+        "Ooty"
+      ],
+      "highlights": [
+        "5 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Hogenakkal – Hyderabad – Chennai – Pondicherry",
+      "category": "five-days-six-nights",
+      "packageType": "five-days-six-nights",
+      "packageTypeLabel": "Five Days & Six Nights",
+      "duration": 4,
+      "durationLabel": "Five Days & Six Nights",
+      "scope": "domestic",
+      "price": 34100,
+      "rating": 4.8,
+      "reviews": 318,
+      "tag": "Popular",
+      "desc": "Route itinerary: Hogenakkal – Hyderabad – Chennai – Pondicherry.",
+      "image": "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Hogenakkal",
+        "Hyderabad",
+        "Chennai",
+        "Pondicherry"
+      ],
+      "highlights": [
+        "4 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Mysore – Chikmagalur – Shimoga – Dandeli – Udupi",
+      "category": "five-days-six-nights",
+      "packageType": "five-days-six-nights",
+      "packageTypeLabel": "Five Days & Six Nights",
+      "duration": 5,
+      "durationLabel": "Five Days & Six Nights",
+      "scope": "domestic",
+      "price": 35900,
+      "rating": 4.9,
+      "reviews": 327,
+      "tag": "Popular",
+      "desc": "Route itinerary: Mysore – Chikmagalur – Shimoga – Dandeli – Udupi.",
+      "image": "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Mysore",
+        "Chikmagalur",
+        "Shimoga",
+        "Dandeli",
+        "Udupi"
+      ],
+      "highlights": [
+        "5 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Ooty – Mysore – Coorg – Wayanad – Kochi Wonderla",
+      "category": "five-days-six-nights",
+      "packageType": "five-days-six-nights",
+      "packageTypeLabel": "Five Days & Six Nights",
+      "duration": 5,
+      "durationLabel": "Five Days & Six Nights",
+      "scope": "domestic",
+      "price": 37700,
+      "rating": 4.6,
+      "reviews": 336,
+      "tag": "Popular",
+      "desc": "Route itinerary: Ooty – Mysore – Coorg – Wayanad – Kochi Wonderla.",
+      "image": "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Ooty",
+        "Mysore",
+        "Coorg",
+        "Wayanad",
+        "Kochi Wonderla"
+      ],
+      "highlights": [
+        "5 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Wayanad – Coorg – Mysore – Chikmagalur – Dandeli – Bengaluru",
+      "category": "six-days-seven-nights",
+      "packageType": "six-days-seven-nights",
+      "packageTypeLabel": "Six Days & Seven Nights",
+      "duration": 6,
+      "durationLabel": "Six Days & Seven Nights",
+      "scope": "domestic",
+      "price": 37900,
+      "rating": 4.7,
+      "reviews": 345,
+      "tag": "Popular",
+      "desc": "Route itinerary: Wayanad – Coorg – Mysore – Chikmagalur – Dandeli – Bengaluru.",
+      "image": "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Wayanad",
+        "Coorg",
+        "Mysore",
+        "Chikmagalur",
+        "Dandeli",
+        "Bengaluru"
+      ],
+      "highlights": [
+        "6 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Mysore – Chikmagalur – Dandeli – Goa – Udupi / Bengaluru",
+      "category": "six-days-seven-nights",
+      "packageType": "six-days-seven-nights",
+      "packageTypeLabel": "Six Days & Seven Nights",
+      "duration": 6,
+      "durationLabel": "Six Days & Seven Nights",
+      "scope": "domestic",
+      "price": 39700,
+      "rating": 4.8,
+      "reviews": 354,
+      "tag": "Popular",
+      "desc": "Route itinerary: Mysore – Chikmagalur – Dandeli – Goa – Udupi / Bengaluru.",
+      "image": "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Mysore",
+        "Chikmagalur",
+        "Dandeli",
+        "Goa",
+        "Udupi",
+        "Bengaluru"
+      ],
+      "highlights": [
+        "6 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Udupi – Dandeli – Goa – Hampi – Bengaluru",
+      "category": "six-days-seven-nights",
+      "packageType": "six-days-seven-nights",
+      "packageTypeLabel": "Six Days & Seven Nights",
+      "duration": 5,
+      "durationLabel": "Six Days & Seven Nights",
+      "scope": "domestic",
+      "price": 41500,
+      "rating": 4.9,
+      "reviews": 363,
+      "tag": "Popular",
+      "desc": "Route itinerary: Udupi – Dandeli – Goa – Hampi – Bengaluru.",
+      "image": "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1002-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Udupi",
+        "Dandeli",
+        "Goa",
+        "Hampi",
+        "Bengaluru"
+      ],
+      "highlights": [
+        "5 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Coorg – Belur – Chikmagalur – Shimoga – Dandeli – Udupi",
+      "category": "six-days-seven-nights",
+      "packageType": "six-days-seven-nights",
+      "packageTypeLabel": "Six Days & Seven Nights",
+      "duration": 6,
+      "durationLabel": "Six Days & Seven Nights",
+      "scope": "domestic",
+      "price": 43300,
+      "rating": 4.6,
+      "reviews": 372,
+      "tag": "Popular",
+      "desc": "Route itinerary: Coorg – Belur – Chikmagalur – Shimoga – Dandeli – Udupi.",
+      "image": "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1002-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1015-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Coorg",
+        "Belur",
+        "Chikmagalur",
+        "Shimoga",
+        "Dandeli",
+        "Udupi"
+      ],
+      "highlights": [
+        "6 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Ooty – Mysore – Bengaluru – Hyderabad – Hogenakkal",
+      "category": "six-days-seven-nights",
+      "packageType": "six-days-seven-nights",
+      "packageTypeLabel": "Six Days & Seven Nights",
+      "duration": 5,
+      "durationLabel": "Six Days & Seven Nights",
+      "scope": "domestic",
+      "price": 45100,
+      "rating": 4.7,
+      "reviews": 381,
+      "tag": "Popular",
+      "desc": "Route itinerary: Ooty – Mysore – Bengaluru – Hyderabad – Hogenakkal.",
+      "image": "assets/images/cdn/picsum-id-1011-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1002-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Ooty",
+        "Mysore",
+        "Bengaluru",
+        "Hyderabad",
+        "Hogenakkal"
+      ],
+      "highlights": [
+        "5 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Delhi – Manali – Rajasthan – Shimla – Jaipur",
+      "category": "north-indian-train",
+      "packageType": "north-indian-train",
+      "packageTypeLabel": "North Indian Train Packages",
+      "duration": 5,
+      "durationLabel": "Train Circuit",
+      "scope": "north-train",
+      "price": 45300,
+      "rating": 4.8,
+      "reviews": 390,
+      "tag": "Popular",
+      "desc": "Route itinerary: Delhi – Manali – Rajasthan – Shimla – Jaipur.",
+      "image": "assets/images/cdn/picsum-id-1002-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1002-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Delhi",
+        "Manali",
+        "Rajasthan",
+        "Shimla",
+        "Jaipur"
+      ],
+      "highlights": [
+        "5 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Agra – Delhi – Rishikesh – Manali",
+      "category": "north-indian-train",
+      "packageType": "north-indian-train",
+      "packageTypeLabel": "North Indian Train Packages",
+      "duration": 4,
+      "durationLabel": "Train Circuit",
+      "scope": "north-train",
+      "price": 47100,
+      "rating": 4.9,
+      "reviews": 399,
+      "tag": "Popular",
+      "desc": "Route itinerary: Agra – Delhi – Rishikesh – Manali.",
+      "image": "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1015-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Agra",
+        "Delhi",
+        "Rishikesh",
+        "Manali"
+      ],
+      "highlights": [
+        "4 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Kolkata – Darjeeling – Gangtok – Sikkim",
+      "category": "north-indian-train",
+      "packageType": "north-indian-train",
+      "packageTypeLabel": "North Indian Train Packages",
+      "duration": 4,
+      "durationLabel": "Train Circuit",
+      "scope": "north-train",
+      "price": 48900,
+      "rating": 4.6,
+      "reviews": 408,
+      "tag": "Popular",
+      "desc": "Route itinerary: Kolkata – Darjeeling – Gangtok – Sikkim.",
+      "image": "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1020-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Kolkata",
+        "Darjeeling",
+        "Gangtok",
+        "Sikkim"
+      ],
+      "highlights": [
+        "4 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Shimla – Delhi – Agra – Dharmasthala",
+      "category": "north-indian-train",
+      "packageType": "north-indian-train",
+      "packageTypeLabel": "North Indian Train Packages",
+      "duration": 4,
+      "durationLabel": "Train Circuit",
+      "scope": "north-train",
+      "price": 50700,
+      "rating": 4.7,
+      "reviews": 417,
+      "tag": "Popular",
+      "desc": "Route itinerary: Shimla – Delhi – Agra – Dharmasthala.",
+      "image": "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1031-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Shimla",
+        "Delhi",
+        "Agra",
+        "Dharmasthala"
+      ],
+      "highlights": [
+        "4 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Hotel stay",
+        "Route transfers",
+        "Sightseeing support",
+        "Travel coordinator"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Dubai – Malaysia – Thailand",
+      "category": "international",
+      "packageType": "international",
+      "packageTypeLabel": "International Packages",
+      "duration": 3,
+      "durationLabel": "International Tour",
+      "scope": "international",
+      "price": 72700,
+      "rating": 4.8,
+      "reviews": 426,
+      "tag": "Premium",
+      "desc": "Route itinerary: Dubai – Malaysia – Thailand.",
+      "image": "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1043-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Dubai",
+        "Malaysia",
+        "Thailand"
+      ],
+      "highlights": [
+        "3 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Airport transfers",
+        "Premium stays",
+        "Guided city/country transfers",
+        "Travel support"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Singapore – Maldives",
+      "category": "international",
+      "packageType": "international",
+      "packageTypeLabel": "International Packages",
+      "duration": 2,
+      "durationLabel": "International Tour",
+      "scope": "international",
+      "price": 74500,
+      "rating": 4.9,
+      "reviews": 435,
+      "tag": "Premium",
+      "desc": "Route itinerary: Singapore – Maldives.",
+      "image": "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1056-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Singapore",
+        "Maldives"
+      ],
+      "highlights": [
+        "2 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Airport transfers",
+        "Premium stays",
+        "Guided city/country transfers",
+        "Travel support"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Singapore – Kuala Lumpur – Port Klang – Malaysia",
+      "category": "luxury-cruise",
+      "packageType": "luxury-cruise",
+      "packageTypeLabel": "Luxury Cruise Packages",
+      "duration": 4,
+      "durationLabel": "Luxury Cruise",
+      "scope": "cruise",
+      "price": 93100,
+      "rating": 4.6,
+      "reviews": 444,
+      "tag": "Premium",
+      "desc": "Route itinerary: Singapore – Kuala Lumpur – Port Klang – Malaysia.",
+      "image": "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1057-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Singapore",
+        "Kuala Lumpur",
+        "Port Klang",
+        "Malaysia"
+      ],
+      "highlights": [
+        "4 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Airport transfers",
+        "Premium stays",
+        "Guided city/country transfers",
+        "Travel support"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Penang – Malaysia – Phuket – Thailand – Singapore",
+      "category": "luxury-cruise",
+      "packageType": "luxury-cruise",
+      "packageTypeLabel": "Luxury Cruise Packages",
+      "duration": 5,
+      "durationLabel": "Luxury Cruise",
+      "scope": "cruise",
+      "price": 94900,
+      "rating": 4.7,
+      "reviews": 453,
+      "tag": "Premium",
+      "desc": "Route itinerary: Penang – Malaysia – Phuket – Thailand – Singapore.",
+      "image": "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+      "gallery": [
+        "assets/images/cdn/picsum-id-1059-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1040-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1011-1200x800.jpg",
+        "assets/images/cdn/picsum-id-1002-1200x800.jpg"
+      ],
+      "itinerary": [
+        "Penang",
+        "Malaysia",
+        "Phuket",
+        "Thailand",
+        "Singapore"
+      ],
+      "highlights": [
+        "5 location route coverage",
+        "Comfort-first transport planning",
+        "Stay and support curated by Jizana"
+      ],
+      "includes": [
+        "Airport transfers",
+        "Premium stays",
+        "Guided city/country transfers",
+        "Travel support"
+      ]
+    }
+  ]
+}
