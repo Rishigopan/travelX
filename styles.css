@@ -2218,19 +2218,19 @@ section.section-block.reveal-ready {
 /* Ember palette remap for Tailwind utility classes used across pages/components */
 :root[data-color-theme="ember"] .text-cyan-300,
 :root[data-color-theme="ember"] .hover\:text-cyan-300:hover,
-:root[data-color-theme="ember"] .dark\:hover\:text-cyan-300:hover,
-:root[data-color-theme="ember"] .dark .dark\:text-cyan-300 {
+:root[data-color-theme="ember"].dark .dark\:hover\:text-cyan-300:hover,
+:root[data-color-theme="ember"].dark .dark\:text-cyan-300 {
   color: var(--theme-cyan-300) !important;
 }
 
 :root[data-color-theme="ember"] .text-cyan-500,
 :root[data-color-theme="ember"] .hover\:text-cyan-500:hover,
-:root[data-color-theme="ember"] .dark\:hover\:text-cyan-500:hover {
+:root[data-color-theme="ember"].dark .dark\:hover\:text-cyan-500:hover {
   color: var(--theme-cyan-500) !important;
 }
 
 :root[data-color-theme="ember"] .text-cyan-600,
-:root[data-color-theme="ember"] .dark .dark\:text-cyan-600 {
+:root[data-color-theme="ember"].dark .dark\:text-cyan-600 {
   color: var(--theme-sky-700) !important;
 }
 
@@ -2269,7 +2269,7 @@ section.section-block.reveal-ready {
   background-color: var(--theme-cyan-500) !important;
 }
 
-:root[data-color-theme="ember"] .dark .dark\:bg-cyan-500\/10 {
+:root[data-color-theme="ember"].dark .dark\:bg-cyan-500\/10 {
   background-color: rgba(var(--theme-cyan-500-rgb), 0.1) !important;
 }
 
@@ -2320,11 +2320,11 @@ section.section-block.reveal-ready {
   border-color: rgba(var(--theme-cyan-500-rgb), 0.45) !important;
 }
 
-:root[data-color-theme="ember"] .dark .dark\:border-cyan-500\/30 {
+:root[data-color-theme="ember"].dark .dark\:border-cyan-500\/30 {
   border-color: rgba(var(--theme-cyan-500-rgb), 0.3) !important;
 }
 
-:root[data-color-theme="ember"] .dark .dark\:focus\:border-cyan-300:focus {
+:root[data-color-theme="ember"].dark .dark\:focus\:border-cyan-300:focus {
   border-color: var(--theme-cyan-300) !important;
 }
 
@@ -2334,7 +2334,7 @@ section.section-block.reveal-ready {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
-:root[data-color-theme="ember"] .dark .dark\:from-cyan-300 {
+:root[data-color-theme="ember"].dark .dark\:from-cyan-300 {
   --tw-gradient-from: var(--theme-cyan-300) var(--tw-gradient-from-position) !important;
   --tw-gradient-to: rgb(var(--theme-cyan-300-rgb) / 0) var(--tw-gradient-to-position) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
@@ -2358,8 +2358,8 @@ section.section-block.reveal-ready {
   --tw-gradient-to: var(--theme-blue-600) var(--tw-gradient-to-position) !important;
 }
 
-:root[data-color-theme="ember"] .dark .dark\:to-blue-500,
-:root[data-color-theme="ember"] .dark .dark\:to-blue-600 {
+:root[data-color-theme="ember"].dark .dark\:to-blue-500,
+:root[data-color-theme="ember"].dark .dark\:to-blue-600 {
   --tw-gradient-to: var(--theme-blue-600) var(--tw-gradient-to-position) !important;
 }
 
@@ -2368,8 +2368,8 @@ section.section-block.reveal-ready {
   --tw-gradient-stops: var(--tw-gradient-from), #ff7f74 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
 }
 
-:root[data-color-theme="ember"] .dark .dark\:via-sky-400,
-:root[data-color-theme="ember"] .dark .dark\:via-sky-600 {
+:root[data-color-theme="ember"].dark .dark\:via-sky-400,
+:root[data-color-theme="ember"].dark .dark\:via-sky-600 {
   --tw-gradient-stops: var(--tw-gradient-from), #ff7f74 var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
 }
 
@@ -2419,6 +2419,18 @@ section.section-block.reveal-ready {
   background-color: rgba(255, 246, 245, 0.9) !important;
 }
 
+:root[data-color-theme="ember"].dark .dark\:bg-white {
+  background-color: #fff2f0 !important;
+}
+
+:root[data-color-theme="ember"].dark .dark\:bg-white\/5 {
+  background-color: rgba(255, 246, 245, 0.05) !important;
+}
+
+:root[data-color-theme="ember"].dark .dark\:bg-white\/10 {
+  background-color: rgba(255, 246, 245, 0.1) !important;
+}
+
 :root[data-color-theme="ember"] .text-slate-900 {
   color: #2c1e1b !important;
 }
@@ -2451,32 +2463,72 @@ section.section-block.reveal-ready {
   border-color: #dcc3bf !important;
 }
 
-:root[data-color-theme="ember"] .dark .dark\:bg-slate-800,
-:root[data-color-theme="ember"] .dark .dark\:bg-slate-900,
-:root[data-color-theme="ember"] .dark .dark\:bg-slate-900\/70,
-:root[data-color-theme="ember"] .dark .dark\:bg-slate-900\/95,
-:root[data-color-theme="ember"] .dark .dark\:bg-slate-950\/80,
-:root[data-color-theme="ember"] .dark .dark\:bg-slate-950\/90 {
+:root[data-color-theme="ember"].dark .dark\:bg-slate-800,
+:root[data-color-theme="ember"].dark .dark\:bg-slate-900,
+:root[data-color-theme="ember"].dark .dark\:bg-slate-900\/70,
+:root[data-color-theme="ember"].dark .dark\:bg-slate-900\/85,
+:root[data-color-theme="ember"].dark .dark\:bg-slate-900\/90,
+:root[data-color-theme="ember"].dark .dark\:bg-slate-900\/95,
+:root[data-color-theme="ember"].dark .dark\:bg-slate-950,
+:root[data-color-theme="ember"].dark .dark\:bg-slate-950\/80,
+:root[data-color-theme="ember"].dark .dark\:bg-slate-950\/90 {
   background-color: rgba(22, 34, 41, 0.9) !important;
 }
 
-:root[data-color-theme="ember"] .dark .dark\:text-slate-100,
-:root[data-color-theme="ember"] .dark .dark\:text-slate-200 {
+:root[data-color-theme="ember"].dark .dark\:bg-slate-900\/70 {
+  background-color: rgba(31, 46, 53, 0.7) !important;
+}
+
+:root[data-color-theme="ember"].dark .dark\:bg-slate-900\/85 {
+  background-color: rgba(31, 46, 53, 0.85) !important;
+}
+
+:root[data-color-theme="ember"].dark .dark\:bg-slate-900\/90 {
+  background-color: rgba(31, 46, 53, 0.9) !important;
+}
+
+:root[data-color-theme="ember"].dark .dark\:bg-slate-900\/95 {
+  background-color: rgba(31, 46, 53, 0.95) !important;
+}
+
+:root[data-color-theme="ember"].dark .dark\:bg-slate-950,
+:root[data-color-theme="ember"].dark .dark\:bg-slate-950\/90 {
+  background-color: rgba(22, 34, 41, 0.9) !important;
+}
+
+:root[data-color-theme="ember"].dark .dark\:text-slate-100,
+:root[data-color-theme="ember"].dark .dark\:text-slate-200 {
   color: #fff2f0 !important;
 }
 
-:root[data-color-theme="ember"] .dark .dark\:text-slate-300 {
+:root[data-color-theme="ember"].dark .dark\:text-white {
+  color: #fff7f5 !important;
+}
+
+:root[data-color-theme="ember"].dark .dark\:text-slate-300 {
   color: #ffd5d0 !important;
 }
 
-:root[data-color-theme="ember"] .dark .dark\:text-slate-400,
-:root[data-color-theme="ember"] .dark .dark\:text-slate-500 {
+:root[data-color-theme="ember"].dark .dark\:text-slate-400,
+:root[data-color-theme="ember"].dark .dark\:text-slate-500 {
   color: #cda9a2 !important;
 }
 
-:root[data-color-theme="ember"] .dark .dark\:border-slate-700,
-:root[data-color-theme="ember"] .dark .dark\:border-slate-600 {
+:root[data-color-theme="ember"].dark .dark\:border-slate-700,
+:root[data-color-theme="ember"].dark .dark\:border-slate-600 {
   border-color: #3b555f !important;
+}
+
+:root[data-color-theme="ember"].dark .dark\:border-white\/10 {
+  border-color: rgba(255, 246, 245, 0.1) !important;
+}
+
+:root[data-color-theme="ember"].dark .dark\:border-white\/15 {
+  border-color: rgba(255, 246, 245, 0.15) !important;
+}
+
+:root[data-color-theme="ember"].dark .dark\:border-white\/20 {
+  border-color: rgba(255, 246, 245, 0.2) !important;
 }
 
 :root[data-color-theme="ember"] .bg-gradient-to-t.from-slate-950.via-slate-900.to-slate-950 {
